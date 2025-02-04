@@ -33,7 +33,7 @@ jobs:
           # Create the target directory in Repo2 (if needed)
           mkdir -p test_sync1/_src/wcrp-universe/models/*
           # Copy files from Repo1's "models" to Repo2's target directory
-          cp -r ttest_sync2/src/esgvoc/api/data_descriptors/* test_sync1/_src/wcrp-universe/models/*
+          cp -r test_sync2/src/esgvoc/api/data_descriptors/* test_sync1/_src/wcrp-universe/models/*
       # Step 4: Commit and push changes to Repo2
       - name: Push to Repo1
         run: |
